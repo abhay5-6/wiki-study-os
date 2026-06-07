@@ -1,0 +1,38 @@
+# Wiki-Study OS Commands
+
+## Environment Setup
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment (Windows)
+.\venv\Scripts\activate
+
+# Activate virtual environment (Unix/macOS)
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+## Running the Application
+# Launch Native GUI
+python -m app.gui.native_gui
+
+# Using the Batch Runner (Windows)
+.\run_study.bat
+
+## CLI Tools
+# List documents
+python main.py list
+
+# Ingest a file or directory
+python main.py ingest <path>
+
+# Clip a web URL
+python main.py clip <url>
+
+# Update topic status
+python main.py status <topic> <state>
+
+## Development & Maintenance
+# Run manual ingestion test
+python ingestion/run_ingestion.py

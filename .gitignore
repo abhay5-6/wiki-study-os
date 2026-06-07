@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Project Specific Data
+data/cache/*
+!data/cache/.gitkeep
+data/index/
+vault/.search_metadata.json
+vault/.search_vectors.npy
+vault/sandboxes/
+
+# Obsidian
+vault/.obsidian/
+
+# GUI/Visualization Outputs
+vault_graph.html
+data/cache/local_graph.html
+
+# OS
+.DS_Store
+Thumbs.db
